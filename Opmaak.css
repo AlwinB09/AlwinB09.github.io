@@ -48,26 +48,29 @@ ul li a:hover {
 }
 
 
-img.CMYK {
-  width: 200px;
-  height: auto;
-  border: 2px solid #333;
-  border-radius: 8px;
-}
-
-/* Specifieke styling voor RGB-afbeelding */
-img.RGB {
-  width: 200px;
-  height: auto;
-  border: 2px solid #333;
-  border-radius: 8px;
-}
-
-/* Container voor beide afbeeldingen */
-.images-container {
+/* Body styling voor centrering */
+body {
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center; /* Horizontaal centreren */
   align-items: center;     /* Verticaal centreren */
-  gap: 20px;               /* Ruimte tussen afbeeldingen */
-  height: 100vh;           /* Hele hoogte van het scherm */
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* Container voor afbeeldingen */
+.images-container {
+  display: flex;
+  gap: 40px;               /* Meer ruimte tussen afbeeldingen */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Specifieke styling voor de afbeeldingen met dezelfde klasse */
+img.kleurmodel {
+  width: 400px;            /* Beide afbeeldingen even groot en groter */
+  height: auto;            /* Verhouding behouden */
+  border: 3px solid #333;  /* Optionele rand */
+  border-radius: 10px;     /* Optioneel: afgeronde hoeken */
 }
