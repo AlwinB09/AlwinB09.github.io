@@ -46,3 +46,28 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+
+img.CMYK {
+  width: 200px;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Specifieke styling voor RGB-afbeelding */
+img.RGB {
+  width: 200px;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Container voor beide afbeeldingen */
+.images-container {
+  display: flex;
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center;     /* Verticaal centreren */
+  gap: 20px;               /* Ruimte tussen afbeeldingen */
+  height: 100vh;           /* Hele hoogte van het scherm */
+}
