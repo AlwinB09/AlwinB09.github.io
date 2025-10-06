@@ -52,7 +52,7 @@ ul li a:hover {
 footer {
     background-color: #333;       /* Donkere achtergrond */
     color: white;                 /* Witte tekst */
-    text-align: center;           /* Tekst gecentreerd */
+    text-align: center;           /* Tekst gecentreerd (in het midden) */
     padding: 20px;                /* Binnenruimte */
     flex-shrink: 0;               /* Zorgt dat footer niet krimpt */
 }
