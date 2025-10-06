@@ -29,7 +29,7 @@ h2 {
     margin-left: 20px;
 }
 
-/* Lijststyling (menu) */
+/* Lijststyling (menu bovenaan) */
 ul {
     list-style-type: none;
     margin: 0;
@@ -61,4 +61,28 @@ footer {
     text-align: center;           /* Tekst gecentreerd */
     padding: 20px;                /* Binnenruimte */
     flex-shrink: 0;               /* Zorgt dat footer niet krimpt */
+}
+
+/* Footer lijst onder elkaar */
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: none;             /* geen extra achtergrond in de footer */
+}
+
+footer ul li {
+    float: none;                  /* verwijdert horizontale uitlijning */
+    margin-bottom: 8px;           /* ruimte tussen links */
+}
+
+footer ul li a {
+    display: block;               /* vult breedte van de li */
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+footer ul li a:hover {
+    background-color: #111111;    /* hover effect */
 }
