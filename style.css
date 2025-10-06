@@ -9,7 +9,7 @@ body {
     display: flex;               /* Flexbox voor sticky footer */
     flex-direction: column;      /* Kolomstructuur */
     min-height: 100vh;           /* Minimaal schermhoogte */
-    background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176));
+    background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237));
 }
 
 /* Hoofdinhoud vult de resterende ruimte */
@@ -29,7 +29,7 @@ h2 {
     margin-left: 20px;
 }
 
-/* Lijststyling (menu bovenaan) */
+/* Lijststyling (menu) */
 ul {
     list-style-type: none;
     margin: 0;
@@ -56,35 +56,9 @@ ul li a:hover {
 
 /* Footer styling */
 footer {
-    background-color: #333;     /* Donkere achtergrond */
-    color: white;               /* Witte tekst */
-    text-align: center;
-    padding: 10px;              /* Kleiner dan 20px */
-    flex-shrink: 0;
-    font-size: 14px;            /* Kleinere tekst */
-}
-
-/* Footer lijst onder elkaar (compact) */
-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: none;
-}
-
-footer ul li {
-    float: none;                /* Onder elkaar i.p.v. naast elkaar */
-    margin-bottom: 4px;         /* Minder ruimte tussen links */
-}
-
-footer ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 3px 0;             /* Kleiner klikvlak */
-    font-size: 13px;            /* Compacter lettertype */
-}
-
-footer ul li a:hover {
-    background-color: #111111;
+    background-color: #333;       /* Donkere achtergrond */
+    color: white;                 /* Witte tekst */
+    text-align: center;           /* Tekst gecentreerd */
+    padding: 20px;                /* Binnenruimte */
+    flex-shrink: 0;               /* Zorgt dat footer niet krimpt */
 }
