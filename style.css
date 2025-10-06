@@ -9,7 +9,7 @@ body {
     display: flex;               /* Flexbox voor sticky footer */
     flex-direction: column;      /* Kolomstructuur */
     min-height: 100vh;           /* Minimaal schermhoogte */
-    background-image: linear-gradient(rgb(161, 196, 253), rgb(194, 233, 251));
+    background-image: linear-gradient(rgb(255, 154, 158), rgb(250, 208, 196));
 }
 
 /* Hoofdinhoud vult de resterende ruimte */
