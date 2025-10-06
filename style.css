@@ -73,7 +73,7 @@ footer ul {
 }
 
 footer ul li {
-    float: none;
+    float: none;                /* Onder elkaar i.p.v. naast elkaar */
     margin-bottom: 4px;         /* Minder ruimte tussen links */
 }
 
@@ -82,7 +82,7 @@ footer ul li a {
     color: white;
     text-decoration: none;
     padding: 3px 0;             /* Kleiner klikvlak */
-    font-size: 13px;            /* Nog compacter lettertype */
+    font-size: 13px;            /* Compacter lettertype */
 }
 
 footer ul li a:hover {
