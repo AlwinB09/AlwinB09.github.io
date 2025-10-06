@@ -1,58 +1,58 @@
-/* Achtergrond van de pagina */
 body {
-    background-image: linear-gradient(rgb(173, 216, 230), rgb(173, 216, 230));
-    display: flex;               /* Flexbox voor sticky footer */
-    flex-direction: column;      /* Kolomstructuur */
-    min-height: 100vh;           /* Hele hoogte van het scherm */
-    margin: 0;
+background-image: linear-gradient(rgb(173, 216, 230), rgb(173, 216, 230));
 }
 
-/* Hoofdinhoud vult de resterende ruimte */
-main {
-    flex: 1;
-    padding: 20px;
-}
 
-/* Kopteksten styling */
 h1 {
-    color: rgb(183, 255, 0);
-    margin-left: 20px;
+  color: rgb(183, 255, 0);
+  margin-left: 20px;
 }
 
 h2 {
-    color: rgb(0, 0, 0);
-    margin-left: 20px;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
 }
 
-/* Lijststyling (menu) */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
 
 ul li {
-    float: left;
+  float: left;
 }
 
 ul li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #111111;
+  background-color: #111111;
 }
+
 
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #333;       /* Donkere achtergrond */
+    color: white;                 /* Witte tekst */
+    text-align: center;           /* Tekst gecentreerd */
+    padding: 20px;                /* Binnenruimte */
+    flex-shrink: 0;               /* Zorgt dat footer niet krimpt */
 }
