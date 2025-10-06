@@ -14,7 +14,7 @@ body {
 
 /* Hoofdinhoud vult de resterende ruimte */
 main {
-    flex: 1;
+    flex: 1;                     /* vult resterende ruimte zodat footer onderaan blijft */
     padding: 20px;
 }
 
