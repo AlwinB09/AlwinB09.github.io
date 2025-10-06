@@ -56,33 +56,35 @@ ul li a:hover {
 
 /* Footer styling */
 footer {
-    background-color: #333;       /* Donkere achtergrond */
-    color: white;                 /* Witte tekst */
-    text-align: center;           /* Tekst gecentreerd */
-    padding: 20px;                /* Binnenruimte */
-    flex-shrink: 0;               /* Zorgt dat footer niet krimpt */
+    background-color: #333;     /* Donkere achtergrond */
+    color: white;               /* Witte tekst */
+    text-align: center;
+    padding: 10px;              /* Kleiner dan 20px */
+    flex-shrink: 0;
+    font-size: 14px;            /* Kleinere tekst */
 }
 
-/* Footer lijst onder elkaar */
+/* Footer lijst onder elkaar (compact) */
 footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: none;             /* geen extra achtergrond in de footer */
+    background: none;
 }
 
 footer ul li {
-    float: none;                  /* verwijdert horizontale uitlijning */
-    margin-bottom: 8px;           /* ruimte tussen links */
+    float: none;
+    margin-bottom: 4px;         /* Minder ruimte tussen links */
 }
 
 footer ul li a {
-    display: block;               /* vult breedte van de li */
+    display: block;
     color: white;
     text-decoration: none;
-    padding: 5px 0;
+    padding: 3px 0;             /* Kleiner klikvlak */
+    font-size: 13px;            /* Nog compacter lettertype */
 }
 
 footer ul li a:hover {
-    background-color: #111111;    /* hover effect */
+    background-color: #111111;
 }
