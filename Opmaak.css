@@ -1,5 +1,5 @@
 body {
-background-image: linear-gradient(rgb(173, 216, 230), rgb(173, 216, 230));
+background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237)); /*Achtergrondkleur gaat van licht (109, 213, 237) naar donker (33, 147, 176).*/
 }
 
 
