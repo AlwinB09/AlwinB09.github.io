@@ -1,0 +1,71 @@
+/* -------- ALGEMENE PAGINA INSTELLINGEN -------- */
+body {
+  background-image: linear-gradient(rgb(173, 216, 230), rgb(173, 216, 230)); /* Lichtblauwe achtergrond */
+  font-family: Arial, sans-serif; /* Tekstletters Arial of een ander duidelijk lettertype */
+  margin: 20px; /* Ruimte rondom de hele pagina */
+}
+
+/* -------- TITELS -------- */
+h1 {
+  color: rgb(183, 255, 0); /* Felgroen/geel */
+  margin-left: 20px; /* Zet titel iets naar rechts */
+}
+
+h2 {
+  color: rgb(0, 0, 0); /* Zwart */
+  margin-left: 20px; /* Zet titel iets naar rechts */
+}
+
+/* -------- LIJSTEN (NAVIGATIEBALK) -------- */
+ul.navbar {
+  list-style-type: none; /* Geen bolletjes in navigatiebalk */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Alles blijft netjes binnen de lijst */
+  background-color: #333333; /* Donkergrijze achtergrond */
+}
+
+ul.navbar li {
+  float: left; /* Lijstitems naast elkaar */
+}
+
+ul.navbar li a {
+  display: block; /* Maak de link een blok, zodat je overal kunt klikken */
+  color: rgb(255, 255, 255); /* Witte tekst */
+  text-align: center; /* Tekst in het midden van het blokje */
+  padding: 14px 16px; /* Ruimte rondom de tekst */
+  text-decoration: none; /* Geen streepje onder de link */
+}
+
+ul.navbar li a:hover {
+  background-color: #111111; /* Achtergrond donkerder bij muis over de link */
+}
+
+/* -------- ALGEMENE LIJSTEN (MET BOLLETJES) -------- */
+ul.normal-list {
+  list-style-type: disc; /* Bolletjes zichtbaar */
+  margin: 0;
+  padding: 0 0 0 20px; /* Ruimte links zodat bolletjes zichtbaar zijn */
+}
+
+/* -------- TABELLEN -------- */
+table {
+  border-collapse: collapse; /* Randen van cellen worden samengevoegd */
+  width: 50%; /* Tabel breedte is 50% van de pagina */
+  margin-top: 20px; /* Ruimte boven de tabel */
+}
+
+th, td {
+  border: 1px solid #000; /* Zwarte rand om cellen */
+  padding: 8px; /* Ruimte binnen de cellen */
+  text-align: center; /* Tekst gecentreerd */
+}
+
+th {
+  background-color: #f2f2f2; /* Lichtgrijze achtergrond voor kopjes */
+}
+
+caption {
+  font-weight: bold; /* Titel van tabel dikgedrukt */
+  margin-bottom: 10px; /* Ruimte onder de titel */
+}
