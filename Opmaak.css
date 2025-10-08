@@ -34,6 +34,9 @@ h2 {
         th {
             background-color: #f2f2f2;
         }
+        td {
+          backroud-color: (rgb(109, 213, 237))
+        }
         caption {
             font-weight: bold;
             margin-bottom: 10px;
