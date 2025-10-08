@@ -16,7 +16,7 @@ h2 {
   margin-left: 20px; /* Zet titel iets naar rechts */
 }
 
-/* -------- LIJSTEN (NAVIGATIEBALK) -------- */
+/* -------- NAVIGATIEBALK -------- */
 ul.navbar {
   list-style-type: none; /* Geen bolletjes in navigatiebalk */
   margin: 0;
@@ -32,7 +32,7 @@ ul.navbar li {
 ul.navbar li a {
   display: block; /* Maak de link een blok, zodat je overal kunt klikken */
   color: rgb(255, 255, 255); /* Witte tekst */
-  text-align: center; /* Tekst in het midden van het blokje */
+  text-align: center; /* Tekst gecentreerd in het blokje */
   padding: 14px 16px; /* Ruimte rondom de tekst */
   text-decoration: none; /* Geen streepje onder de link */
 }
