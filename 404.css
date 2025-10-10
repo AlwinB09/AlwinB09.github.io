@@ -1,0 +1,85 @@
+/*Zorg dat html en body altijd 100% hoogte hebben*/
+html, body {
+    height: 100%;       /*Gradient beslaat hele schermhoogte*/
+    margin: 0;          /*Verwijdert standaard marge*/
+    font-family: 'Arial', sans-serif; /*Tekst lettertype instellen*/
+}
+
+/*Achtergrond van de pagina + flexbox voor sticky footer*/
+body {
+    display: flex;               /*Flexbox voor sticky footer*/
+    flex-direction: column;      /*Kolomstructuur*/
+    min-height: 100vh;           /*Minimaal schermhoogte*/
+    background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237)); /*Achtergrondkleur gaat van licht (109, 213, 237) naar donker (33, 147, 176).*/
+    color: #333;                 /*Standaard tekstkleur*/
+}
+
+/*Container styling voor hoofdinhoud*/
+.container {
+    flex: 1;                     /*Vult resterende ruimte zodat footer onderaan blijft*/
+    padding: 20px;               /*Binnenruimte rondom content*/
+    text-align: center;          /*Centraal uitlijnen van tekst en afbeeldingen*/
+}
+
+/*Kopteksten styling*/
+h1 {
+    color: #e74c3c;              /*Rode kleur voor 404 nummer*/
+    font-size: 10rem;            /*Heel groot nummer voor visueel effect*/
+    margin: 0;                   /*Geen marge rondom*/
+}
+
+h2 {
+    color: #333;                 /*Donkere kleur voor subtitel*/
+    font-size: 2rem;             /*Iets kleiner dan h1*/
+    margin: 10px 0;              /*Ruimte boven en onder*/
+}
+
+/*Afbeelding styling*/
+.error-image {
+    max-width: 400px;            /*Maximaal 400px breed*/
+    width: 100%;                 /*Past zich aan aan schermbreedte*/
+    margin: 20px 0;              /*Ruimte boven en onder de afbeelding*/
+    border-radius: 10px;         /*Ronde hoeken voor een vriendelijkere look*/
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*Schaduw voor diepte effect*/
+}
+
+/*Knop styling*/
+.btn {
+    text-decoration: none;       /*Verwijdert onderstreping van link*/
+    padding: 12px 25px;          /*Binnenruimte van knop*/
+    background-color: #3498db;   /*Blauwe achtergrond*/
+    color: white;                /*Witte tekst*/
+    border-radius: 5px;          /*Ronde hoeken voor knop*/
+    font-weight: bold;           /*Tekst dikker maken*/
+    transition: background-color 0.3s ease, transform 0.2s ease; /*Animatie bij hover*/
+}
+
+.btn:hover {
+    background-color: #2980b9;   /*Donkerder blauw bij hover*/
+    transform: translateY(-2px); /*Lichte opwaartse beweging bij hover*/
+}
+
+/*Lijststyling (menu)*/
+ul {
+    list-style-type: none;       /*Geen standaard opsommingstekens*/
+    margin: 0;                   /*Geen marge rondom*/
+    padding: 0;                  /*Geen padding rondom*/
+    overflow: hidden;            /*Zorgt dat alles netjes binnen menu blijft*/
+    background-color: #333333;   /*Donkere achtergrondkleur van menu*/
+}
+
+ul li {
+    float: left;                 /*Menu-items naast elkaar plaatsen*/
+}
+
+ul li a {
+    display: block;              /*Maak hele link klikbaar*/
+    color: rgb(255, 255, 255);   /*Witte tekst*/
+    text-align: center;          /*Tekst gecentreerd*/
+    padding: 14px 16px;          /*Binnenruimte voor klikbaarheid*/
+    text-decoration: none;       /*Geen onderstreping*/
+}
+
+ul li a:hover {
+    background-color: #111111;   /*Darker achtergrond bij hover*/
+}
