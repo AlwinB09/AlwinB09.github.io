@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237)); /*Achtergrondkleur gaat van licht (109, 213, 237) naar donker (33, 147, 176).*/
 }
 
-/*Hoofdinhoud vult de resterende ruimte*/
+/*Hoofdinhoud vult de resterende tussen de tekst en de footer ruimte*/
 main {
     flex: 1;                     /*Vult resterende ruimte zodat footer onderaan blijft*/
     padding: 20px;
