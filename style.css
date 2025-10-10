@@ -2,6 +2,7 @@
 html, body {
     height: 100%;       /*Gradient beslaat hele schermhoogte*/
     margin: 0;          /*Verwijdert standaard marge*/
+    font-family: Arial, sans-serif;
 }
 
 /*Achtergrond van de pagina + flexbox voor sticky footer*/
@@ -9,10 +10,10 @@ body {
     display: flex;               /*Flexbox voor sticky footer*/
     flex-direction: column;      /*Kolomstructuur*/
     min-height: 100vh;           /*Minimaal schermhoogte*/
-    background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237)); /*Achtergrondkleur gaat van licht (109, 213, 237) naar donker (33, 147, 176).*/
+    background-image: linear-gradient(rgb(109, 213, 237), rgb(33, 147, 176), rgb(109, 213, 237)); /*Achtergrondkleur gaat van licht naar donker*/
 }
 
-/*Hoofdinhoud vult de resterende tussen de tekst en de footer ruimte*/
+/*Hoofdinhoud vult de resterende ruimte tussen de tekst en de footer*/
 main {
     flex: 1;                     /*Vult resterende ruimte zodat footer onderaan blijft*/
     padding: 20px;
@@ -24,41 +25,44 @@ h1 {
     margin-left: 20px;
 }
 
-h2 {
+h2, h3 {
     color: rgb(0, 0, 0);
     margin-left: 20px;
 }
 
 /*Lijststyling (menu)*/
-ul {
-    list-style-type: none;
+ul.menu {
+    display: flex;               /*Flexbox voor menu*/
+    flex-wrap: wrap;             /*Zorgt dat menu breekt op kleine schermen*/
+    list-style-type: none;       /*Verwijder standaard bullets*/
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333333;
 }
 
-ul li {
-    float: left;
+ul.menu li {
+    flex: 1;                     /*Verdeelt ruimte gelijkmatig*/
+    text-align: center;
 }
 
-ul li a {
+ul.menu li a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-ul li a:hover {
+ul.menu li a:hover {
     background-color: #111111;
 }
 
 /*Footer styling*/
 footer {
-    background-color: #333;       /*Donkere achtergrond*/
-    color: white;                 /*Witte tekst*/
-    text-align: center;           /*Tekst gecentreerd*/
-    padding: 20px;                /*Binnenruimte*/
-    flex-shrink: 0;               /*Zorgt dat footer niet krimpt*/
+    background-color: #333;      /*Donkere achtergrond*/
+    color: white;                /*Witte tekst*/
+    text-align: center;          /*Tekst gecentreerd*/
+    padding: 20px;               /*Binnenruimte*/
+    flex-shrink: 0;              /*Zorgt dat footer niet krimpt*/
 }
